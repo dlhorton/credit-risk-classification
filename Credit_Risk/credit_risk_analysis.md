@@ -1,14 +1,24 @@
-## Overview of the Analysis
+# Loan Risk Analysis
 
-I used techniques to train and evaluate a model based on loan risk using data on historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers. There were 77536 rows of data in the set and had fields on loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, total debt, and loan status. I used a logistical regression model to predict if a borrower is creditworthy.
+## Overview
+This analysis focuses on developing a model to assess the creditworthiness of borrowers using historical data from a peer-to-peer lending services company. The dataset consists of 77,536 entries with features including loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, total debt, and loan status. A logistic regression model was employed to predict the creditworthiness of borrowers.
 
-## Results
+## Analysis Results
 
-Machine Learning Model:
-    - Accuracy: 0.99
-    - Precision: 1.00
-    - Recall: 1.00
+**Machine Learning Model Performance:**
+- **Accuracy:** 0.99 overall
+- **Precision:** 1.00
+- **Recall:** 1.00
 
-## Summary
+The model achieves excellent performance metrics for healthy loans, showing a perfect precision and recall. However, it identifies high-risk loans with an accuracy of 87%, suggesting room for improvement in this area.
 
-The healthy loan has a 100% accuracy and is therefore very good at predicting. The high-risk loan has an 87% accuracy at predicting. I would recommend trying to improve the accuracy score on the high-risk loans to see if it can get closer to 100%. However, I do still think this is a fine model to use and assist in predicting if a borrower is creditworthy.
+## Summary and Recommendations
+
+The logistic regression model is highly effective, with 100% accuracy in predicting healthy loans, indicating its reliability in most scenarios. However, the accuracy for high-risk loans stands at 87%. To enhance the model's effectiveness further, it is recommended to focus on improving the prediction accuracy for high-risk loans. Adjusting the model or incorporating additional data might help achieve closer to 100% accuracy. Despite this, the current model is robust and can significantly aid in assessing borrower creditworthiness.
+
+## Future Work
+
+- Explore more complex models or ensemble techniques to improve high-risk loan predictions.
+- Consider feature engineering to extract more nuanced indicators from existing data.
+- Conduct further analysis with updated or additional datasets to refine the model's predictions.
+
